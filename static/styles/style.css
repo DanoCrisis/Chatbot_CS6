@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+#fullpage{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2{
+    color: yellow;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-size: small;
+    color: yellow;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+#smallprint{
+    text-align: right;
+    font-size: 15px;
+    margin: 0px 30px 10px 0px;
+}
+
+#tim-image{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.message-area{
+    height: 400px;
+    width: 700px;
+    max-width: 700px;
+}
+
+#messages{
+    background-color: black;
+    border: 2px dotted white;
+}
+
+#answerbox{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message-reply{
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    min-width: 40%;
+    max-width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#user-mess{
+    text-align: right;
+    color: blue;
+    border: solid 2px blue;
+    align-self: flex-end;
+}
+
+#ai-resp{
+    text-align: left;
+    color: red;
+    border: solid 2px red;
+    align-self: flex-start;
+}
+
+#message-box{
+    width: 500px;
+    max-width: 500px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Main Page</title>
+    {% endblock %}
+  <body class="text-center">
+    
+    {% block content %}
+    
+    <h2> You have been connected to the A.I. assistant* </h2>
+    <p id="smallprint"> *Pester at your own risk </p>
+      
+    <div id="chatbox" class="card text-center">
+        <div id="answerbox">
+            <img src="../static/images/tim.jpg" alt="robot" id="tim-image">
+            <div class="card" id="messages">
+                <p class=message id="ai-resp">Diverting 0.00000167 % of brain power to new user</p>
+                <div class="message-area">
+                    {% for response in response_list %}
+                    <div class="message-reply">
+                        <p class=message id="user-mess">{{ response[0] }}</p>
+                        <p class=message id="ai-resp">{{ response[1] }}</p>
+                    </div>
+                    {% endfor %}
+            </div>     
+                <br><br>
+                <form role="form" method='POST' action='/chatbot' class="">
+                  <div class="form-group text-center" id="questionbox">
+                    <input type="text" name="message" class="" id="message-box" placeholder="Pester..." autofocus required>
+                  </div>
+                    <div id=buttons>
+                        <button type="reset" class="btn btn-default">Clear</button>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
