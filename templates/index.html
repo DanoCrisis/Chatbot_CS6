@@ -7,15 +7,24 @@
     <h3>Your assistant will be loaded shortly</h3>
     <div id="chatbox" class="card text-center">
       <div id="answerbox">
+        <a href="{{ url_for('chatbot') }}"><button class="click-here">Click here to connect with A.I. Assistant</button></a>
           <div class="card" id="messages">
               <div class="message-area">
                   <div class="message-reply">
-                      <p class=message id="ai-resp">There</p>
-                      <p class=message id="user-mess">Hi</p>
-                      <p class=message id="ai-resp">There</p>
+                      <p class=message id="ai-resp">Scanning for available assistants...</p>
+                      <p class=message id="user-mess">Assistant found: Assistant 42</p>
+                      <p class=message id="ai-resp">Oh no! Not assistant 42</p>
+                      <p class=message id="user-mess">It is the only one available</p>
+                      <p class=message id="ai-resp">But 42 hates everyone</p>
+                      <p class=message id="user-mess">Its an A.I. Assistant, it can't hate</p>
+                      <p class=message id="ai-resp">Sure seems like it</p>
+                      <p class=message id="user-mess">It is 42, or a 10min wait</p>
+                      <p class=message id="ai-resp">Fine, connect the user to 42 then</p>
+                      <p class=message id="user-mess">Connected now - Click the button when ready</p>
                   </div>
               </div>     
           </div>
+          <a href="{{ url_for('chatbot') }}"><button class="click-here">Click here to connect with A.I. Assistant</button></a>
       </div>
   </div>
 
